@@ -9,7 +9,7 @@ namespace test.Models
     public class MyDBContext : DbContext{
         public MyDBContext() { }
 
-
+        public System.Data.Entity.DbSet<test.Models.Pharmacist> pharmacists { get; set; }
 
     }
 }
