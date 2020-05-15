@@ -1,0 +1,73 @@
+﻿@model test.Models.Pharmacist
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<div id="login-div">
+    @using (Html.BeginForm("Autherize","Login",FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Username)
+            @Html.EditorFor(model => model.Username)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password)
+            @Html.EditorFor(model => model.Password)
+        </div>
+        <button type="submit" class="btn btn-primary" value="Login" name="loginbtn">Login</button>
+
+        @*<table>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model =>model.Username)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.Username)
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Password)</td>
+                    <td>@Html.EditorFor(model => model.Password)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="name" value="Login" />
+                        <input type="reset" name="name" value="clear" />
+                    </td>
+                </tr>
+            </table>*@
+    }
+</div>
+@*<h2>Index</h2>*@
+@*<form class="form-vertical" action="@Url.Action("Index")" method="post">
+    <div class="module-head">
+        <h3>SignIn</h3>
+    </div>
+    <div class="module-body">
+        <div class="control-group">
+            <div class="controls row-fluid">
+                <input class="span12" type="text" name="username" placeholder="Username">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls row-fluid">
+                <input class="password" type="password" placeholder="Password">
+            </div>
+        </div>
+    </div>
+    <div class="module-foot">
+        <div class="control-group">
+            <div class=" controls clearfix">
+                <button type="submit" class="btn btn-primary pull-right" value="Login" name="loginbtn">Login</button>
+                <label class="checkbox">
+                    <input name="remember me" value="1" type="checkbox" /> Remember me
+                </label>
+            </div>
+        </div>
+    </div>
+</form>*@
