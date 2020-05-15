@@ -136,10 +136,6 @@
     <Compile Include="Migrations\202005142228466_CreateTableMedicine.designer.cs">
       <DependentUpon>202005142228466_CreateTableMedicine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005151802318_updatePharmacistData.cs" />
-    <Compile Include="Migrations\202005151802318_updatePharmacistData.designer.cs">
-      <DependentUpon>202005151802318_updatePharmacistData.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202005151808150_UpdatePharmacistData.cs" />
     <Compile Include="Migrations\202005151808150_UpdatePharmacistData.designer.cs">
       <DependentUpon>202005151808150_UpdatePharmacistData.cs</DependentUpon>
@@ -208,9 +204,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005142228466_CreateTableMedicine.resx">
       <DependentUpon>202005142228466_CreateTableMedicine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005151802318_updatePharmacistData.resx">
-      <DependentUpon>202005151802318_updatePharmacistData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005151808150_UpdatePharmacistData.resx">
       <DependentUpon>202005151808150_UpdatePharmacistData.cs</DependentUpon>
