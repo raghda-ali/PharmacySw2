@@ -140,11 +140,14 @@
     <Compile Include="Migrations\202005151839201_addTable.designer.cs">
       <DependentUpon>202005151839201_addTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005152032553_dropPharmacistTable.cs" />
+    <Compile Include="Migrations\202005152032553_dropPharmacistTable.designer.cs">
+      <DependentUpon>202005152032553_dropPharmacistTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\MyDBContext.cs" />
-    <Compile Include="Models\Pharmacists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005151839201_addTable.resx">
       <DependentUpon>202005151839201_addTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005152032553_dropPharmacistTable.resx">
+      <DependentUpon>202005152032553_dropPharmacistTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

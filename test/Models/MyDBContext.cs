@@ -10,7 +10,6 @@ namespace test.Models
         public MyDBContext() { }
 
         public System.Data.Entity.DbSet<test.Models.Medicine> medicines { get; set; }
-        public System.Data.Entity.DbSet<test.Models.Pharmacists> pharmacists { get; set; }
 
 
     }
