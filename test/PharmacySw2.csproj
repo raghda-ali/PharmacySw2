@@ -132,10 +132,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005142151275_CreateTablePharmacist.cs" />
-    <Compile Include="Migrations\202005142151275_CreateTablePharmacist.designer.cs">
-      <DependentUpon>202005142151275_CreateTablePharmacist.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202005142228466_CreateTableMedicine.cs" />
     <Compile Include="Migrations\202005142228466_CreateTableMedicine.designer.cs">
       <DependentUpon>202005142228466_CreateTableMedicine.cs</DependentUpon>
@@ -143,6 +139,10 @@
     <Compile Include="Migrations\202005151802318_updatePharmacistData.cs" />
     <Compile Include="Migrations\202005151802318_updatePharmacistData.designer.cs">
       <DependentUpon>202005151802318_updatePharmacistData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005151808150_UpdatePharmacistData.cs" />
+    <Compile Include="Migrations\202005151808150_UpdatePharmacistData.designer.cs">
+      <DependentUpon>202005151808150_UpdatePharmacistData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -206,14 +206,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005142151275_CreateTablePharmacist.resx">
-      <DependentUpon>202005142151275_CreateTablePharmacist.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005142228466_CreateTableMedicine.resx">
       <DependentUpon>202005142228466_CreateTableMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005151802318_updatePharmacistData.resx">
       <DependentUpon>202005151802318_updatePharmacistData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005151808150_UpdatePharmacistData.resx">
+      <DependentUpon>202005151808150_UpdatePharmacistData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

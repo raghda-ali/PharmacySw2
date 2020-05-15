@@ -3,9 +3,14 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateTablePharmacist : DbMigration
+    public partial class UpdatePharmacistData : DbMigration
     {
         public override void Up()
+        {
+            DropTable("dbo.Pharmacists");
+        }
+        
+        public override void Down()
         {
             CreateTable(
                 "dbo.Pharmacists",
@@ -23,11 +28,6 @@
                     })
                 .PrimaryKey(t => t.id);
             
-        }
-        
-        public override void Down()
-        {
-            DropTable("dbo.Pharmacists");
         }
     }
 }
