@@ -14,25 +14,25 @@ namespace test.Controllers
         {   
             return View();
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Login(Pharmacist objUser)
-        {
-            if (ModelState.IsValid)
-            {
-                using (MyDBContext db = new MyDBContext())
-                {
-                    var obj = db.pharmacists.Where(a => a.Username.Equals(objUser.Username) && a.Password.Equals(objUser.Password)).FirstOrDefault();
-                    if (obj != null)
-                    {
-                        Session["UserID"] = obj.id.ToString();
-                        Session["UserName"] = obj.Username.ToString();
-                        //return RedirectToAction("");
-                    }
-                }
-            }
-            return View(objUser);
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Login(Pharmacist objUser)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        using (MyDBContext db = new MyDBContext())
+        //        {
+        //            var obj = db.pharmacists.Where(a => a.Username.Equals(objUser.Username) && a.Password.Equals(objUser.Password)).FirstOrDefault();
+        //            if (obj != null)
+        //            {
+        //                Session["UserID"] = obj.id.ToString();
+        //                Session["UserName"] = obj.Username.ToString();
+        //                //return RedirectToAction("");
+        //            }
+        //        }
+        //    }
+        //    return View(objUser);
+        //}
 
     }
 }
