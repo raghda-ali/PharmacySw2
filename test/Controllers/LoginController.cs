@@ -10,8 +10,8 @@ namespace test.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
-        {   
+        public ActionResult Login()
+        {
             return View();
         }
         //[HttpPost]
@@ -25,14 +25,24 @@ namespace test.Controllers
         //            var obj = db.pharmacists.Where(a => a.Username.Equals(objUser.Username) && a.Password.Equals(objUser.Password)).FirstOrDefault();
         //            if (obj != null)
         //            {
-        //                Session["UserID"] = obj.id.ToString();
-        //                Session["UserName"] = obj.Username.ToString();
-        //                //return RedirectToAction("");
+        //                Session["id"] = obj.id.ToString();
+        //                Session["Username"] = obj.Username.ToString();
+        //                return RedirectToAction("UserDashBoard");
         //            }
         //        }
         //    }
         //    return View(objUser);
         //}
 
+        //public ActionResult UserDashBoard()
+        //{
+        //    if (Session["idservese"] != null)
+        //    {
+        //        return View();
+        //    }
+        //    else
+        //    {
+        //        return RedirectToAction("Login");
+        //    }
+        }
     }
-}
