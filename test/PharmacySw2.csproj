@@ -140,7 +140,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\MyDBContext.cs" />
-    <Compile Include="Models\Pharmacist.cs" />
+    <Compile Include="Models\Pharmacists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
